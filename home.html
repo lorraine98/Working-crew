@@ -1,95 +1,47 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
   <head>
-    <link
-      rel="shortcut icon"
-      sizes="16x16 32x32 64x64"
-      href="https://nomadcoders.co/m.png"
-    />
-    <title>Home-Hyosung</title>
-    <link href="style.css" rel="stylesheet" />
-    <meta charset="utf-8" />
-    <meta name="description" content="Way to go to baby's google" />
-    <style>
-      .container {
-        height: 200vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-        flex-wrap: wrap;
-      }
-      .rect {
-        width: 300px;
-        height: 300px;
-        background-color: coral;
-        margin: 20px;
-      }
-      #second {
-        background-color: darkgreen;
-        position: fixed;
-        height: 50px;
-        width: 100%;
-        top: 5px;
-      }
-      .rect:nth-child(even) {
-        background-color: teal;
-      }
-      form {
-        margin-top: 300px;
-        margin-left: 50%;
-      }
-      input:required {
-        border-color: tomato;
-      }
-      input[placeholder~="name"] {
-        background-color: violet;
-      }
-      button:hover {
-        background-color: violet;
-      }
-      h1 {
-        font-size: 50px;
-        text-align: center;
-        margin: 100px;
-        transition: color 3s ease-in-out;
-      }
-      h1:hover {
-        color: goldenrod;
-      }
-      img {
-        border: 10px solid black;
-        border-radius: 50%;
-        transition: transform 5s ease-in-out;
-        object-fit: cover;
-        width: 500px;
-        height: 500px;
-        margin-left: 50px;
-      }
-      img:hover {
-        transform: rotateZ(90deg);
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Working Crew</title>
   </head>
   <body>
-    <h1>
-      WELCOME
-    </h1>
-    <form>
-      <input type="text" placeholder="first name" />
-      <input type="text" placeholder="last name" />
-      <input type="password" required placeholder="password" />
-      <button>submit</button>
-    </form>
-    <img
-      src="https://i.pinimg.com/originals/cb/fa/b6/cbfab6a477fdf6ea59fa1e93b1e2d207.png"
-    />
-    <div id="second"></div>
-    <div class="container">
-      <div class="rect"></div>
-      <div class="rect"></div>
-      <div class="rect"></div>
-      <div class="rect"></div>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>15:52</span>
+      </div>
+      <div class="status-bar__column">
+        <span>1000%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
     </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Working Crew</h1>
+      <p class="welcome-header__text">
+        If you have Working Crew Account,log in with your email or phone number.
+      </p>
+    </header>
+    <form action="friends.html" method="GET" id="login-form">
+      <input
+        name="username"
+        type="text"
+        required
+        placeholder="Email or Phone number"
+      />
+      <input name="password" type="password" required placeholder="password" />
+      <input type="submit" value="log in" />
+      <input type="submit" value="sign up" />
+      <a href="#">Find Working Crew Account or password</a>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
