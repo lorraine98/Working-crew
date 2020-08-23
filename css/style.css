@@ -4,10 +4,23 @@
 /* components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
 
 /* screens */
 @import "screens/login.css";
+@import "screens/mycrew.css";
 
-body {
-  height: 1000vh;
+main {
+  height: 200vh;
+  padding-top: 15vh;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }
