@@ -11,6 +11,7 @@
 /* screens */
 @import "screens/login.css";
 @import "screens/mycrew.css";
+@import "screens/find.css";
 
 main {
   height: 200vh;
