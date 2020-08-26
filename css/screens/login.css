@@ -1,12 +1,19 @@
+html {
+  height: 100vh;
+}
+
 .welcome-header {
+  width: 100%;
+  box-sizing: border-box;
   font-size: 30px;
   font-weight: bold;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 80px;
   color: #2db400;
+  position: relative;
+  margin-top: 130px;
 }
 .welcome-header__text {
   font-size: 17px;
@@ -18,7 +25,7 @@
 #login-form {
   display: flex;
   flex-direction: column;
-  margin: 0px 30px;
+  margin: 80px 30px;
 }
 #login-form input {
   padding: 15px 0px;
