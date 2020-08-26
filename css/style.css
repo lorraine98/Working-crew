@@ -7,12 +7,15 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
+@import "components/alt-screen-header.css";
 
 /* screens */
 @import "screens/login.css";
 @import "screens/mycrew.css";
 @import "screens/find.css";
 @import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 main {
   height: 200vh;
