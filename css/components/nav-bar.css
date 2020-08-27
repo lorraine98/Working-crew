@@ -17,6 +17,19 @@
 .nav__link i {
   color: white;
 }
+
+@keyframes notificationAnmation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .nav__notification {
   position: absolute;
   background-color: rgb(255, 38, 0);
@@ -29,6 +42,7 @@
   align-items: center;
   left: 15px;
   bottom: 10px;
+  animation: notificationAnmation 1.5s ease-in-out infinite;
 }
 .nav__notification-ver2 {
   position: absolute;

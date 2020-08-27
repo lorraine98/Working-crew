@@ -11,7 +11,7 @@
 }
 #crew-search-bar-form i {
   right: 5px;
-  top: 8px;
+  top: 10px;
   color: white;
 }
 
@@ -20,7 +20,7 @@
   background-color: #2db4005e;
   border-radius: 25px;
   width: 100%;
-  height: 30px;
+  padding: 10px;
   color: white;
   transition: background-color 0.3s ease-in-out;
 }
@@ -44,3 +44,31 @@ i {
   color: gray;
 }
 
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--green);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  animation: hideSplashScreen 0.2s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+#splash-screen i {
+  color: white;
+}
